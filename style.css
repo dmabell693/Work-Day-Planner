@@ -1,0 +1,22 @@
+.top-container {
+    margin: 3rem 0 1.5rem 0;
+    padding-bottom: 3rem;
+    border-bottom: 8px solid black;
+}
+
+.time-block {
+    height: 4rem;
+}
+
+#time-block-label {
+    border: 1px solid #7777;
+    border-left: none;
+}
+
+#time-block-text {
+    border: 1px solid #7777;
+}
+
+#time-block-save {
+    background-color: darkcyan;
+}
