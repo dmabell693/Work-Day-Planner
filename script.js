@@ -38,19 +38,104 @@ for (i=0; i<rowArray.length; i++) {
     }
 }
 
+
+
+//local storage section
+
+var row9Button = $("#row9-button");
+var row10Button = $("#row10-button");
+var row11Button = $("#row11-button");
+var row12Button = $("#row12-button");
+var row13Button = $("#row13-button");
+var row14Button = $("#row14-button");
+var row15Button = $("#row15-button");
+var row16Button = $("#row16-button");
+var row17Button = $("#row17-button");
+
+
 //event-listener to grab text from textarea and place it in local storage
 
 
 $("button").on("click", function() {
     event.preventDefault;
-    var task = $(this).prev().val();
-    console.log(task);
-    localStorage.setItem("agenda-item", task);
-    console.log(localStorage);
+    if (event.target.id === "row9-button") {
+        var agendaItem9 = $(this).prev().val();
+        localStorage.setItem("row9Agendas", agendaItem9);
+    }
 });
 
-function getLocalStorage() {
-    var userAgenda = localStorage.getItem("agenda-item");
-    $(row9).append(userAgenda);
-}
-getLocalStorage();
+$("button").on("click", function() {
+    event.preventDefault;
+    if (event.target.id === "row10-button") {
+        var agendaItem10 = $(this).prev().val();
+        localStorage.setItem("row10Agendas", agendaItem10);
+    }
+});
+
+$("button").on("click", function() {
+    event.preventDefault;
+    if (event.target.id === "row11-button") {
+        var agendaItem11 = $(this).prev().val();
+        localStorage.setItem("row11Agendas", agendaItem11);
+    }
+});
+
+$("button").on("click", function() {
+    event.preventDefault;
+    if (event.target.id === "row12-button") {
+        var agendaItem12 = $(this).prev().val();
+        localStorage.setItem("row12Agendas", agendaItem12);
+    }
+});
+
+$("button").on("click", function() {
+    event.preventDefault;
+    if (event.target.id === "row13-button") {
+        var agendaItem13 = $(this).prev().val();
+        localStorage.setItem("row13Agendas", agendaItem13);
+    }
+});
+
+$("button").on("click", function() {
+    event.preventDefault;
+    if (event.target.id === "row14-button") {
+        var agendaItem14 = $(this).prev().val();
+        localStorage.setItem("row14Agendas", agendaItem14);
+    }
+});
+
+$("button").on("click", function() {
+    event.preventDefault;
+    if (event.target.id === "row15-button") {
+        var agendaItem15 = $(this).prev().val();
+        localStorage.setItem("row15Agendas", agendaItem15);
+    }
+});
+
+$("button").on("click", function() {
+    event.preventDefault;
+    if (event.target.id === "row16-button") {
+        var agendaItem16 = $(this).prev().val();
+        localStorage.setItem("row16Agendas", agendaItem16);
+    }
+});
+
+$("button").on("click", function() {
+    event.preventDefault;
+    if (event.target.id === "row17-button") {
+        var agendaItem17 = $(this).prev().val();
+        localStorage.setItem("row17Agendas", agendaItem17);
+    }
+});
+
+
+// console.log(localStorage.row9Agendas);
+row9.text(localStorage.row9Agendas);
+row10.text(localStorage.row10Agendas);
+row11.text(localStorage.row11Agendas);
+row12.text(localStorage.row12Agendas);
+row13.text(localStorage.row13Agendas);
+row14.text(localStorage.row14Agendas);
+row15.text(localStorage.row15Agendas);
+row16.text(localStorage.row16Agendas);
+row17.text(localStorage.row17Agendas);
