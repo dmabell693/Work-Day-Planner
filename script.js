@@ -1,7 +1,7 @@
 //place the date at the top of the page
 $("#welcome-date").text(moment().format("dddd, MMMM Do"));
 
-//define variables to grab id's of time blocks
+//declare variables to grab id's of time blocks
 var row9 = $("#row9");
 var row10 = $("#row10");
 var row11 = $("#row11");
@@ -12,7 +12,7 @@ var row15 = $("#row15");
 var row16 = $("#row16");
 var row17 = $("#row17");
 
-//define variables to grab and parseInt data-number of correlating id's
+//declare variables to grab and parseInt data-number of correlating id's
 var data9 = parseInt(row9.attr("data-number"));
 var data10 = parseInt(row10.attr("data-number"));
 var data11 = parseInt(row11.attr("data-number"));
@@ -40,23 +40,10 @@ for (i=0; i<rowArray.length; i++) {
 }
 
 
-
 //local storage section
 
-var row9Button = $("#row9-button");
-var row10Button = $("#row10-button");
-var row11Button = $("#row11-button");
-var row12Button = $("#row12-button");
-var row13Button = $("#row13-button");
-var row14Button = $("#row14-button");
-var row15Button = $("#row15-button");
-var row16Button = $("#row16-button");
-var row17Button = $("#row17-button");
 
-
-//event-listener to grab text from textarea and place it in local storage
-
-
+//event-listeners to grab text from textarea and place in local storage
 $("button").on("click", function() {
     event.preventDefault;
     if (event.target.id === "row9-button") {
