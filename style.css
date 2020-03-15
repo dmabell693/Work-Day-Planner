@@ -1,3 +1,7 @@
+body {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif !important;
+}
+
 textarea {
     color: black;
 }
@@ -15,6 +19,7 @@ textarea {
 .time-block-label {
     border: 1px solid #7777;
     border-left: none;
+    padding-top: 0.5rem;
 }
 
 .time-block-text {
@@ -24,5 +29,5 @@ textarea {
 }
 
 .time-block-save {
-    background-color: darkcyan;
+    background-color: #16e9fc;
 }

@@ -1,3 +1,4 @@
+//place the date at the top of the page
 $("#welcome-date").text(moment().format("dddd, MMMM Do"));
 
 //define variables to grab id's of time blocks
@@ -30,11 +31,11 @@ var dataArray = [data9, data10, data11, data12, data13, data14, data15, data16, 
 //for-loop to iterate through and compare each data-number with current hour and set background-color accordingly
 for (i=0; i<rowArray.length; i++) {
     if (dataArray[i] < moment().hour()) {
-        rowArray[i].css("background-color", "gray");
+        rowArray[i].css("background-color", "#e7e9eb");
     } else if (dataArray[i] === moment().hour()) {
-        rowArray[i].css("background-color", "red");   
+        rowArray[i].css("background-color", "#fd7a7f");   
     } else if (dataArray[i] > moment().hour()) {
-        rowArray[i].css("background-color", "green");
+        rowArray[i].css("background-color", "#98e28e");
     }
 }
 
