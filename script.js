@@ -42,82 +42,15 @@ for (i=0; i<rowArray.length; i++) {
 
 //local storage section
 
-
-//event-listeners to grab text from textarea and place in local storage
+//event-listener to grab text from textarea and place in local storage
 $("button").on("click", function() {
     event.preventDefault;
-    if (event.target.id === "row9-button") {
-        var agendaItem9 = $(this).prev().val();
-        localStorage.setItem("row9Agendas", agendaItem9);
-    }
-});
+    var agendaKey = event.target.id;
+    var agendaItem = $(this).prev().val();
+    localStorage.setItem(agendaKey, agendaItem);
+})
 
-$("button").on("click", function() {
-    event.preventDefault;
-    if (event.target.id === "row10-button") {
-        var agendaItem10 = $(this).prev().val();
-        localStorage.setItem("row10Agendas", agendaItem10);
-    }
-});
-
-$("button").on("click", function() {
-    event.preventDefault;
-    if (event.target.id === "row11-button") {
-        var agendaItem11 = $(this).prev().val();
-        localStorage.setItem("row11Agendas", agendaItem11);
-    }
-});
-
-$("button").on("click", function() {
-    event.preventDefault;
-    if (event.target.id === "row12-button") {
-        var agendaItem12 = $(this).prev().val();
-        localStorage.setItem("row12Agendas", agendaItem12);
-    }
-});
-
-$("button").on("click", function() {
-    event.preventDefault;
-    if (event.target.id === "row13-button") {
-        var agendaItem13 = $(this).prev().val();
-        localStorage.setItem("row13Agendas", agendaItem13);
-    }
-});
-
-$("button").on("click", function() {
-    event.preventDefault;
-    if (event.target.id === "row14-button") {
-        var agendaItem14 = $(this).prev().val();
-        localStorage.setItem("row14Agendas", agendaItem14);
-    }
-});
-
-$("button").on("click", function() {
-    event.preventDefault;
-    if (event.target.id === "row15-button") {
-        var agendaItem15 = $(this).prev().val();
-        localStorage.setItem("row15Agendas", agendaItem15);
-    }
-});
-
-$("button").on("click", function() {
-    event.preventDefault;
-    if (event.target.id === "row16-button") {
-        var agendaItem16 = $(this).prev().val();
-        localStorage.setItem("row16Agendas", agendaItem16);
-    }
-});
-
-$("button").on("click", function() {
-    event.preventDefault;
-    if (event.target.id === "row17-button") {
-        var agendaItem17 = $(this).prev().val();
-        localStorage.setItem("row17Agendas", agendaItem17);
-    }
-});
-
-
-// console.log(localStorage.row9Agendas);
+//when the page loads/refreshes, populate textareas from localStorage
 row9.text(localStorage.row9Agendas);
 row10.text(localStorage.row10Agendas);
 row11.text(localStorage.row11Agendas);
