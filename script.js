@@ -37,3 +37,20 @@ for (i=0; i<rowArray.length; i++) {
         rowArray[i].css("background-color", "green");
     }
 }
+
+//event-listener to grab text from textarea and place it in local storage
+
+
+$("button").on("click", function() {
+    event.preventDefault;
+    var task = $(this).prev().val();
+    console.log(task);
+    localStorage.setItem("agenda-item", task);
+    console.log(localStorage);
+});
+
+function getLocalStorage() {
+    var userAgenda = localStorage.getItem("agenda-item");
+    $(row9).append(userAgenda);
+}
+getLocalStorage();
